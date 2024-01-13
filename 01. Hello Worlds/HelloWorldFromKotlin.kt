@@ -1,4 +1,4 @@
 // Print 'Hello World' to terminal.
-fun main(args: Array <String>) {
+fun main() {
     println("Hello World from Kotlin!")
 }
