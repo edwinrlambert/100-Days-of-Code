@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media-queries.css">
+</head>
+
+<body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Edwin Ronald Lambert</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Edwin Ronald Lambert</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.jpeg" alt="Edwin's Profile Picture" />
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Edwin Ronald Lambert</h1>
+            <p class="section__text__p2">Business System Analyst</p>
+            <div class="btn_container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                    Download Resume
+                </button>
+                <button class="btn btn-color-1" onclick="location.href = './#contact'">
+                    Contact Info
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
